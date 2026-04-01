@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Contact</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Logo" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Navigatiemenu openen"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="naam.html">Over mij</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <section class="pagina-intro py-5">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="lead">Heb je een vraag of wil je samenwerken? Stuur me een bericht!</p>
+      </div>
+    </section>
+
+    <section class="contact-sectie py-4">
+      <div class="container">
+        <div class="row g-5">
+
+          <!-- Contactformulier -->
+          <div class="col-12 col-lg-7">
+            <form action="#" method="post" novalidate>
+
+              <!-- Persoonlijke gegevens -->
+              <fieldset class="mb-4">
+                <legend>Persoonlijke gegevens</legend>
+
+                <div class="row g-3">
+                  <div class="col-12 col-sm-6">
+                    <label for="voornaam" class="form-label">Voornaam <span aria-hidden="true">*</span></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="voornaam"
+                      name="voornaam"
+                      required
+                      autocomplete="given-name"
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label for="achternaam" class="form-label">Achternaam <span aria-hidden="true">*</span></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="achternaam"
+                      name="achternaam"
+                      required
+                      autocomplete="family-name"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="email" class="form-label">E-mailadres <span aria-hidden="true">*</span></label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      autocomplete="email"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="telefoon" class="form-label">Telefoonnummer</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telefoon"
+                      name="telefoon"
+                      autocomplete="tel"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Bericht -->
+              <fieldset class="mb-4">
+                <legend>Bericht</legend>
+
+                <div class="mb-3">
+                  <label for="onderwerp" class="form-label">Onderwerp <span aria-hidden="true">*</span></label>
+                  <select class="form-select" id="onderwerp" name="onderwerp" required>
+                    <option value="" disabled selected>Kies een onderwerp…</option>
+                    <option value="samenwerking">Samenwerking</option>
+                    <option value="stage">Stageaanbod</option>
+                    <option value="vraag">Algemene vraag</option>
+                    <option value="anders">Anders</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="bericht" class="form-label">Bericht <span aria-hidden="true">*</span></label>
+                  <textarea
+                    class="form-control"
+                    id="bericht"
+                    name="bericht"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+              </fieldset>
+
+              <!-- Akkoord -->
+              <div class="mb-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="akkoord"
+                    name="akkoord"
+                    required
+                  />
+                  <label class="form-check-label" for="akkoord">
+                    Ik ga akkoord met de verwerking van mijn gegevens. <span aria-hidden="true">*</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <i class="bi bi-send me-2"></i>Verstuur bericht
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Contactgegevens (aside) -->
+          <aside class="col-12 col-lg-5">
+            <h2>Gegevens</h2>
+            <ul class="list-unstyled contact-info mt-3">
+              <li class="mb-3">
+                <i class="bi bi-envelope me-2"></i>
+                <a href="mailto:gosseyeluka@gmail.com">gosseyeluka@gmail.com</a>
+              </li>
+              <li class="mb-3">
+                <i class="bi bi-telephone me-2"></i>
+                <a href="tel:+32467001443">+32 467 00 14 43</a>
+              </li>
+              <li class="mb-3">
+                <i class="bi bi-geo-alt me-2"></i>
+                Lint, België
+              </li>
+            </ul>
+
+            <h2 class="mt-4">Socials</h2>
+            <div class="socials mt-3">
+              <a
+                href="https://www.linkedin.com/in/luka-gosseye-955b1233b/"
+                target="_blank"
+                class="btn btn-outline-secondary me-2 mb-2"
+                aria-label="LinkedIn"
+              >
+                <i class="bi bi-linkedin me-1"></i> LinkedIn
+              </a>
+              <a
+                href="https://github.com/LukaG712"
+                target="_blank"
+                class="btn btn-outline-secondary mb-2"
+                aria-label="GitHub"
+              >
+                <i class="bi bi-github me-1"></i> GitHub
+              </a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <p class="mb-0">&copy; 2026 Luka Gosseye. Alle rechten voorbehouden.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end mt-2 mt-md-0">
+          <a href="https://www.linkedin.com/in/luka-gosseye-955b1233b/" target="_blank" aria-label="LinkedIn">
+            <i class="bi bi-linkedin fs-4 me-2"></i>
+          </a>
+          <a href="https://github.com/LukaG712" target="_blank" aria-label="GitHub">
+            <i class="bi bi-github fs-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
